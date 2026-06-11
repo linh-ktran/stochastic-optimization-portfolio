@@ -28,12 +28,12 @@ $$\hat{v}_N = \min_{x \in X} \frac{1}{N} \sum_{i=1}^{N} f(x, \xi_i)$$
 ### Multi-Stage Stochastic Programming
 For decisions made sequentially over time with evolving uncertainty:
 
-$$\min_{x_1} c_1^T x_1 + \mathbb{E}\left[\min_{x_2(\xi_1)} c_2^T x_2 + \mathbb{E}\left[\cdots\right]\right]$$
+$$\min_{x_1} c_1^T x_1 + \mathbb{E}[\min_{x_2(\xi_1)} c_2^T x_2 + \mathbb{E}[\cdots]]$$
 
 subject to non-anticipativity constraints ensuring decisions only use available information.
 
 ### Dynamic Programming (Bellman Equation)
-$$V_t(x) = \min_{u \in U(x)} \left\{ c(x, u) + \mathbb{E}\left[V_{t+1}(f(x, u, \xi))\right] \right\}$$
+$$V_t(x) = \min_{u \in U(x)} \lbrace c(x, u) + \mathbb{E}[V_{t+1}(f(x, u, \xi))] \rbrace$$
 
 ---
 
