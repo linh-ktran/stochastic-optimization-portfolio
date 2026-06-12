@@ -1,2 +1,1 @@
-"""Stochastic Optimization Portfolio - Reusable modules."""
-
+"""Stochastic optimization modules."""
